@@ -8,8 +8,9 @@ smtbmc
 read -formal wrapped_mbsFSK.v LFSRmod.v mbsFSK.v sampleClockGen.v SymbLUT.v
 prep -top wrapped_mbsFSK
 
+
 [files]
-properties.v
+mbs_1a/src/user_project_wrapper.v
 mbs_1a/src/wrapped_mbsFSK.v
 mbs_1a/src/LFSRmod.v
 mbs_1a/src/mbsFSK.v

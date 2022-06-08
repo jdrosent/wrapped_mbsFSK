@@ -19,8 +19,8 @@ caravel_test:
 
 # module test
 module_test:
-  recipe: "all" 
-  directory: "."
+  recipe: "mbsFSK_tb.v" 
+  directory: "mbs_1a"
   makefile: "Makefile"
 
 # run the wrapper formal proof
@@ -44,6 +44,6 @@ source:
 # gds - check nothing on metal 5, DRC & LVS
 final:
   directory: "final"
-  gds_filename: "gds/wrapped_mbsFSK.gds"
-  lvs_filename: "verilog/gl/wrapped_mbsFSK.v"
-  lef_filename: "lef/wrapped_mbsFSK.lef"
+  gds_filename: "/gds/wrapped_mbsFSK.gds"
+  lvs_filename: "/verilog/gl/wrapped_mbsFSK.v"
+  lef_filename: "/lef/wrapped_mbsFSK.lef"
