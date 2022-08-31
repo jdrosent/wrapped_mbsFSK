@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1661980430" />
+    <testcase name="test_mbsFSK" classname="test_LFSRmod" file="/home/pbjames/Documents/ZeroToASIC/mbs_fsk/test/test_LFSRmod.py" lineno="12" time="0.01475071907043457" sim_time_ns="1300.001" ratio_time="88131.36456551746" />
+  </testsuite>
+</testsuites>
