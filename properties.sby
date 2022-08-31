@@ -5,10 +5,13 @@ mode prove
 smtbmc
 
 [script]
-read -formal wrapper.v rest of your source files.v
-prep -top wrapped_project
+read -formal wrapper.v mbsFSK.v sampleClockGen.v SymbLUT.v LFSRmod.v
+prep -top wrapped_mbsFSK
 
 [files]
 wrapper.v
 properties.v
-rest of your source files.v
+mbsFSK/src/mbsFSK.v
+mbsFSK/src/sampleClockGen.v
+mbsFSK/src/SymbLUT.v
+mbsFSK/src/LFSRmod.v
