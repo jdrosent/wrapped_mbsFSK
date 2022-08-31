@@ -11,7 +11,7 @@
 //`define USE_IRQ 1
 
 // update this to the name of your module
-module wrapped_project(
+module wrapped_mbsFSK(
 `ifdef USE_POWER_PINS
     inout vccd1,	// User area 1 1.8V supply
     inout vssd1,	// User area 1 digital ground
@@ -151,6 +151,17 @@ module wrapped_project(
     // Instantiate your module here, 
     // connecting what you need of the above signals. 
     // Use the buffered outputs for your module's outputs.
+	
+    mbsFSK mbsFSK0(
+        .clk    (wb_clk_i),
+        .reset  (la1_data_in[0]),
+        .READY  (buf_io_out[8]),
+        .SHIFT  (buf_io_out[9]),
+        .LFSR   (buf_io_out[14:10]),
+        .COUNT  (buf_io_out[21:15]),
+        .GPIO2  (buf_io_out[22]),
+        .GPIO1  (buf_io_out[23])
+        );
 
 endmodule 
 `default_nettype wire
