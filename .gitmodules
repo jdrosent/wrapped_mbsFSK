@@ -1,0 +1,3 @@
+[submodule "wrapped_mbsFSK"]
+	path = wrapped_mbsFSK
+	url = https://github.com/jdrosent/wrapped_mbsFSK.git
