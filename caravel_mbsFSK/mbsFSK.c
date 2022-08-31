@@ -39,15 +39,43 @@ void main()
 
 	*/
 
-    // 2 inputs
+	/*    // 2 inputs
 	reg_mprj_io_8 =   GPIO_MODE_USER_STD_INPUT_NOPULL;
 	reg_mprj_io_9 =   GPIO_MODE_USER_STD_INPUT_NOPULL;
 
     // 2 outputs
 	reg_mprj_io_14 =  GPIO_MODE_USER_STD_OUTPUT;
 	reg_mprj_io_15 =  GPIO_MODE_USER_STD_OUTPUT;
+	*/
 
-    /* Apply configuration */
+	/*
+	wire READY    = mprj_io[8];
+    wire SHIFT    = mprj_io[9];
+    wire LFSR     = mprj_io[14:10];
+    wire COUNT    = mprj_io[21:15];
+    wire GPIO2    = mprj_io[22];
+    wire GPIO1    = mprj_io[23];
+	*/
+	//outputs from the top module    
+	reg_mprj_io_8  =  GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_9  =  GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_10 =  GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_11 =  GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_12 =  GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_13 =  GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_14 =  GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_15 =  GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_16 =  GPIO_MODE_USER_STD_OUTPUT;
+    reg_mprj_io_17 =  GPIO_MODE_USER_STD_OUTPUT;
+    reg_mprj_io_18 =  GPIO_MODE_USER_STD_OUTPUT;
+    reg_mprj_io_19 =  GPIO_MODE_USER_STD_OUTPUT;
+    reg_mprj_io_20 =  GPIO_MODE_USER_STD_OUTPUT;
+    reg_mprj_io_21 =  GPIO_MODE_USER_STD_OUTPUT;
+    reg_mprj_io_22 =  GPIO_MODE_USER_STD_OUTPUT;
+    reg_mprj_io_23 =  GPIO_MODE_USER_STD_OUTPUT;
+
+
+	/* Apply configuration */
     reg_mprj_xfer = 1;
     while (reg_mprj_xfer == 1);
 
@@ -57,7 +85,7 @@ void main()
     reg_la0_data |= (1 << PROJECT_ID); // enable the project
 
     // reset design with 0bit of 2nd bank of LA
-    reg_la1_oenb = 1; // enable
+    reg_la1_oenb = 0xFFFFFFFF; // enable
     reg_la1_iena = 0;
     reg_la1_data = 1;
     reg_la1_data = 0;

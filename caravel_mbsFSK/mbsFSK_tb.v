@@ -18,11 +18,11 @@
 `timescale 1 ns / 1 ps
 
 // change module name to something that suits your project
-module project_tb;
+module mbsFSK_tb;
     initial begin
         // change to suit your project
-        $dumpfile ("project.vcd");
-        $dumpvars (0, project_tb);
+        $dumpfile ("mbsFSK.vcd");
+        $dumpvars (0, mbsFSK_tb);
         #1;
     end
 
@@ -36,16 +36,14 @@ module project_tb;
 
     ///// convenience signals that match what the cocotb test modules are looking for
     // change to suit your project. Here's how we can make some nicer named signals for inputs & outputs
-    wire output14 = mprj_io[14];
-    wire output15 = mprj_io[15];
-
-    wire input8, input9;
-
-    assign mprj_io[ 8] = input8;
-    assign mprj_io[ 9] = input9;
+    wire       READY    = mprj_io[8];
+    wire       SHIFT    = mprj_io[9];
+    wire [4:0] LFSR     = mprj_io[14:10];
+    wire [6:0] COUNT    = mprj_io[21:15];
+    wire       GPIO2    = mprj_io[22];
+    wire       GPIO1    = mprj_io[23];
     /////
     
-
     wire flash_csb;
     wire flash_clk;
     wire flash_io0;
@@ -84,7 +82,7 @@ module project_tb;
 
     spiflash #(
         // change the hex file to match your project
-        .FILENAME("project.hex")
+        .FILENAME("mbsFSK.hex")
     ) spiflash (
         .csb(flash_csb),
         .clk(flash_clk),
