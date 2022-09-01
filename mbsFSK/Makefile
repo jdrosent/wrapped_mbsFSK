@@ -43,7 +43,7 @@ test_SymbLUT:
 	mkdir sim_build/
 	iverilog -o sim_build/sim.vvp -s SymbLUT -s dump -g2012 src/SymbLUT.v test/dump_SymbLUT.v
 	PYTHONOPTIMIZE=${NOASSERT} MODULE=test_SymbLUT vvp -M $$(cocotb-config --prefix)/cocotb/libs -m libcocotbvpi_icarus sim_build/sim.vvp
-	i grep failure results.xml
+	! grep failure results.xml
 
 show_%: %.vcd %.gtkw
 	gtkwave $^
