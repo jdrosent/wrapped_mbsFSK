@@ -19,7 +19,8 @@
 #include <stub.c>
 
 // change to your project's ID - ask Matt
-#define PROJECT_ID 0
+#define PROJECT_ID 5
+#define FW_READY 24
 
 void main()
 {
@@ -74,6 +75,9 @@ void main()
     reg_mprj_io_22 =  GPIO_MODE_USER_STD_OUTPUT;
     reg_mprj_io_23 =  GPIO_MODE_USER_STD_OUTPUT;
 
+	//FWRDY signal
+	reg_mprj_io_24 =  GPIO_MODE_MGMT_STD_OUTPUT;
+
 
 	/* Apply configuration */
     reg_mprj_xfer = 1;
@@ -89,6 +93,8 @@ void main()
     reg_la1_iena = 0;
     reg_la1_data = 1;
     reg_la1_data = 0;
+
+	reg_mprj_datal |= 1 << FW_READY;
 
     // no need for anything else as this design is free running.
 

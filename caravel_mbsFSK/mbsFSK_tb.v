@@ -42,7 +42,9 @@ module mbsFSK_tb;
     wire [6:0] COUNT    = mprj_io[21:15];
     wire       GPIO2    = mprj_io[22];
     wire       GPIO1    = mprj_io[23];
-    /////
+
+	wire	   FWRDY	= mprj_io[24];
+	/////
     
     wire flash_csb;
     wire flash_clk;
