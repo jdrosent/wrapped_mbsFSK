@@ -3,7 +3,7 @@
 # Wrapped MBS FSK
 
 This project was created as part of the Zero To ASIC course.
-![gds](docs/chipLayout.png)
+![Image of the gds file](mbsFSK/docs/chipLayout.png)
 The project generates pseudo-random bit sequences for a low power wireless uplink. 
 
 # Zero to ASIC Course
