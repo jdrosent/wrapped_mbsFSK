@@ -35,10 +35,10 @@ openlane:
 # source required for various configs and module instantiation
 source:
     - wrapper.v
-	- mbsFSK/src/mbsFSK.v
-	- mbsFSK/src/sampleClockGen.v
-	- mbsFSK/src/SymbLUT.v
-	- mbsFSK/src/LFSRmod.v
+    - mbsFSK/src/mbsFSK.v
+    - mbsFSK/src/sampleClockGen.v
+    - mbsFSK/src/SymbLUT.v
+    - mbsFSK/src/LFSRmod.v
 
 # gds - check nothing on metal 5, DRC & LVS
 final:
