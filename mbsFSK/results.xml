@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1662022562" />
+    <testcase name="test_mbsFSK" classname="test_SymbLUT" file="/home/pbjames/Documents/ZeroToASIC/openlane/designs/wrapped_mbsFSK/mbsFSK/test/test_SymbLUT.py" lineno="12" time="0.01063084602355957" sim_time_ns="1120.001" ratio_time="105353.89163928323" />
+  </testsuite>
+</testsuites>

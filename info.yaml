@@ -1,10 +1,10 @@
 --- 
 # information
 project: 
-  title: "title"
-  description: "description"
-  picture: docs/empty.png
-  author: "Author"
+  title: "wrapped mbs fsk"
+  description: "baseband signal engine for a backscatter uplink"
+  picture: mbsFSK/docs/chipLayout.png
+  author: "James Rosenthal"
   license: LICENSE
 
 # optional interfaces you want to use: gpio, la1, la2, la3, irq, clk2, wishbone & openram
@@ -13,14 +13,14 @@ interfaces: ['la1', 'gpio']
 # test within caravel
 caravel_test:
   recipe: "coco_test"
-  directory: "caravel_test"
-  id: 1
-  module_name: "wrapped_project"
+  directory: "caravel_mbsFSK"
+  id: 5
+  module_name: "wrapped_mbsFSK"
 
 # module test
 module_test:
   recipe: "all" 
-  directory: "project directory"
+  directory: "mbsFSK"
   makefile: "Makefile"
 
 # run the wrapper formal proof
