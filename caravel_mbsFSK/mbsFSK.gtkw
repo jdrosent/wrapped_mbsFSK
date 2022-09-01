@@ -1,0 +1,68 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Thu Sep  1 07:42:58 2022
+[*]
+[dumpfile] "/home/pbjames/Documents/ZeroToASIC/caravel_user_project/verilog/rtl/wrapped_mbsFSK/caravel_mbsFSK/mbsFSK.vcd"
+[dumpfile_mtime] "Thu Sep  1 07:31:23 2022"
+[dumpfile_size] 499557
+[savefile] "/home/pbjames/Documents/ZeroToASIC/caravel_user_project/verilog/rtl/wrapped_mbsFSK/caravel_mbsFSK/mbsFSK.gtkw"
+[timestart] 75000000
+[size] 1000 600
+[pos] -1 -1
+*-27.717951 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] mbsFSK_tb.
+[treeopen] mbsFSK_tb.uut.
+[treeopen] mbsFSK_tb.uut.mprj.
+[sst_width] 233
+[signals_width] 206
+[sst_expanded] 1
+[sst_vpaned_height] 144
+@22
+mbsFSK_tb.COUNT[6:0]
+@28
+mbsFSK_tb.FWRDY
+mbsFSK_tb.GPIO1
+mbsFSK_tb.GPIO2
+@22
+mbsFSK_tb.LFSR[4:0]
+@28
+mbsFSK_tb.READY
+mbsFSK_tb.RSTB
+mbsFSK_tb.SHIFT
+mbsFSK_tb.USER_VDD1V8
+mbsFSK_tb.USER_VDD3V3
+mbsFSK_tb.VDD1V8
+mbsFSK_tb.VDD3V3
+mbsFSK_tb.VSS
+mbsFSK_tb.clk
+mbsFSK_tb.flash_clk
+mbsFSK_tb.flash_csb
+mbsFSK_tb.flash_io0
+mbsFSK_tb.flash_io1
+mbsFSK_tb.gpio
+@22
+mbsFSK_tb.mprj_io[37:0]
+@28
+mbsFSK_tb.power1
+mbsFSK_tb.power2
+mbsFSK_tb.power3
+mbsFSK_tb.power4
+mbsFSK_tb.uut.mprj.mbsFSK.active
+@22
+mbsFSK_tb.uut.mprj.mbsFSK.buf_io_oeb[37:0]
+mbsFSK_tb.uut.mprj.mbsFSK.buf_io_out[37:0]
+mbsFSK_tb.uut.mprj.mbsFSK.buf_la1_data_out[31:0]
+mbsFSK_tb.uut.mprj.mbsFSK.io_in[37:0]
+mbsFSK_tb.uut.mprj.mbsFSK.io_oeb[37:0]
+mbsFSK_tb.uut.mprj.mbsFSK.io_out[37:0]
+@23
+mbsFSK_tb.uut.mprj.mbsFSK.la1_data_in[31:0]
+@22
+mbsFSK_tb.uut.mprj.mbsFSK.la1_data_out[31:0]
+mbsFSK_tb.uut.mprj.mbsFSK.la1_oenb[31:0]
+@28
+mbsFSK_tb.uut.mprj.mbsFSK.vccd1
+mbsFSK_tb.uut.mprj.mbsFSK.vssd1
+mbsFSK_tb.uut.mprj.mbsFSK.wb_clk_i
+[pattern_trace] 1
+[pattern_trace] 0
