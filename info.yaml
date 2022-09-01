@@ -35,11 +35,14 @@ openlane:
 # source required for various configs and module instantiation
 source:
     - wrapper.v
-    - other source files here
+	- mbsFSK/src/mbsFSK.v
+	- mbsFSK/src/sampleClockGen.v
+	- mbsFSK/src/SymbLUT.v
+	- mbsFSK/src/LFSRmod.v
 
 # gds - check nothing on metal 5, DRC & LVS
 final:
   directory: "final"
-  gds_filename: "gds/project.gds"
-  lvs_filename: "verilog/gl/project.v"
-  lef_filename: "lef/project.lef"
+  gds_filename: "gds/wrapped_mbsFSK.gds"
+  lvs_filename: "verilog/gl/wrapped_mbsFSK.v"
+  lef_filename: "lef/wrapped_mbsFSK.lef"
